@@ -1,4 +1,4 @@
-# 🎟️ Ehgzly
+# 🎟️ Ehgzly (Under Construction)
 
 > A modern event booking platform where users can browse, discover, and book tickets for events.
 
