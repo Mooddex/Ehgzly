@@ -1,5 +1,5 @@
 "use client";
-
+import { signIn } from "@/auth";
 import Link from "next/link";
 
 export default function Signup() {
@@ -16,12 +16,10 @@ export default function Signup() {
         <span className="card__title">Welcome</span>
         <p className="card__subtitle">Create Your Account Today.</p>
 
-        <button className="sign-up">
+        <button onClick={() => signIn("google")} className="sign-up">
           Sign Up With Google
         </button>
       </div>
     </div>
-  
-
   );
 }

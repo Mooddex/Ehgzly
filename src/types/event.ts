@@ -1,0 +1,18 @@
+export interface event {
+  id: number;
+  title: string;
+  description: string;
+  location: string;
+  date: string;
+  time: string;
+  price: string;
+  category: string;
+  image: string;
+};
+
+export interface ticket {
+  id: number;
+  bgGradient: string;
+  icon: any;
+  rating: number;
+};

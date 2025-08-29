@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "sonner";
+
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { Toaster } from "sonner";
+import { SessionProvider } from "next-auth/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,22 +20,27 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ehgzly",
   description: "Ticket Purchasing Website",
-  
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <Navbar />
-        {children}
-        <Toaster position="bottom-center" />
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+      >
+        <SessionProvider>
+        <Navbar />
+          <main className="pt-20">{children}</main>
+
+        <Footer title="Ehgzly" subtitle="Ticket Purchasing Website" />
+        <Toaster />
+        </SessionProvider>
       </body>
     </html>
   );
 }
+
