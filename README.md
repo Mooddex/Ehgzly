@@ -1,10 +1,12 @@
 # 🎟️ Ehgzly (Under Construction)
 
-> A modern event booking platform where users can browse, discover, and book tickets for events.
+> A modern **AI-powered** event booking platform where users can browse, discover, and book tickets for events.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?logo=tailwind-css)
 ![Sentry](https://img.shields.io/badge/Sentry-Monitoring-red?logo=sentry)
+![OpenAI](https://img.shields.io/badge/OpenAI-Chatbot-blue?logo=openai)
+![Sonner](https://sonner.io/)  
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
@@ -14,18 +16,12 @@
 
 ---
 
-## 📸 Screenshots
-
-![Homepage](https://res.cloudinary.com/deq0w5tnr/image/upload/v1756643729/screencapture-ehgzly-mocha-vercel-app-2025-08-31-15_32_54_p6f3az.png)
-
----
-
 ## 🚀 Tech Stack
 
-- **Framework:** [Next.js](https://nextjs.org/) (React, TypeScript)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Error Monitoring:** [Sentry](https://sentry.io/)
-- **Notifications:** [Sonner](https://sonner.io/)
+- **Framework:** [Next.js](https://nextjs.org/) (React, TypeScript)  
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)  
+- **Error Monitoring:** [Sentry](https://sentry.io/)  
+- **AI Integration:** OpenAI API (Chatbot & Smart Event Search)  
 
 ---
 
@@ -34,6 +30,8 @@
 | Status | Feature                                                |
 | ------ | ------------------------------------------------------ |
 | ✅     | 🔍 **Search and explore upcoming events**               |
+| ✅     | 🤖 **AI Chatbot for instant help & FAQs**               |
+| ✅     | 🔎 **AI-powered smart event search**                    |
 | ✅     | 🎫 **Book and manage event tickets**                    |
 | ✅     | 👤 **Authentication & user profiles**                   |
 | ✅     | 💳 **Secure booking flow**                              |
@@ -47,17 +45,13 @@
 ## 🛠️ Getting Started
 
 ### 1. Clone the repository
-
 ```bash
 git clone https://github.com/Mooddex/Ehgzly
 cd ehgzly
+npm install
 ````
 
-```bash
-npm install
-```
-
-### 3. Environment variables
+### 2. Environment variables
 
 Create a `.env` file in the root:
 
@@ -73,7 +67,7 @@ AUTH_GITHUB_ID=
 AUTH_GITHUB_SECRET=
 ```
 
-### 4. Start the development server
+### 3. Start the development server
 
 ```bash
 npm run dev
@@ -90,12 +84,14 @@ Open [http://localhost:3000](http://localhost:3000) 🚀
 * [ ] Integrate payment gateway
 * [ ] Email notifications for bookings
 * [ ] Event categories & advanced filtering
+* [ ] Improve chatbot with multi-language support 🌍
 
 ### Long-term
 
 * [ ] Mobile-first deep optimizations
 * [ ] Organizer analytics & reports
 * [ ] Social sharing & referral system
+* [ ] AI recommendations (personalized event suggestions) 🤩
 
 ---
 
@@ -121,5 +117,3 @@ Here are a few of my other projects you might like:
 * 🥘 **Matbakhy** – A marketplace for kitchen makers built with Next.js, TypeScript and MongoDB. [Repo](https://github.com/Mooddex/matbakhy)
 * 📝 **Blogbook** – A full-stack blogging platform with JWT authentication and CRUD posts. [Repo](https://github.com/Mooddex/Blogbook)
 * ⚖️ **My Office** – A case & client management system for lawyers. [Repo](https://github.com/Mooddex/My-Office)
-
-```
