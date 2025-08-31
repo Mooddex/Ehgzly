@@ -1,4 +1,4 @@
-import Signup from "@/components/SignupWithGoogle";
+import Signup from "@/components/Signup";
 
 const SignupPage = () => {
     return ( 

@@ -1,4 +1,4 @@
-import SigninWithGoogle from "@/components/SigninWithGoogle";
+import SigninWithGoogle from "@/components/Signin";
 
 const SigninPage = () => {
     return ( 

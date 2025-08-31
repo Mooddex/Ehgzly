@@ -1,0 +1,57 @@
+[
+  {
+    "id": "101",
+    "title": "Tech Innovation Summit",
+    "description": "Join industry leaders and innovators for a full-day conference on the latest in AI, blockchain, and cloud computing. Network with startups and investors.",
+    "location": "Silicon Valley Convention Center",
+    "date": "2025-05-14",
+    "time": "09:00 AM",
+    "price": "Free",
+    "category": "Business",
+    "image": "tech-summit.jpg"
+  },
+  {
+    "id": "102",
+    "title": "City Jazz Festival",
+    "description": "An evening of smooth and classic jazz performed by international artists. Food trucks and local breweries will be on site.",
+    "location": "Central Park Amphitheater",
+    "date": "2025-06-22",
+    "time": "07:30 PM",
+    "price": "$45",
+    "category": "Music",
+    "image": "jazz-festival.jpg"
+  },
+  {
+    "id": "103",
+    "title": "Modern Art Exhibition",
+    "description": "Explore contemporary art installations and digital experiences from over 50 international artists. Guided tours available.",
+    "location": "Metropolitan Art Gallery",
+    "date": "2025-04-10",
+    "time": "11:00 AM",
+    "price": "$20",
+    "category": "Art & Culture",
+    "image": "art-exhibit.png"
+  },
+  {
+    "id": "104",
+    "title": "Youth Coding Bootcamp",
+    "description": "A 2-week intensive coding bootcamp designed for high school students. Learn JavaScript, React, and Next.js with hands-on projects.",
+    "location": "Downtown Learning Hub",
+    "date": "2025-07-05",
+    "time": "10:00 AM",
+    "price": "$120",
+    "category": "Education",
+    "image": "coding-bootcamp.jpg"
+  },
+  {
+    "id": "105",
+    "title": "Championship Soccer Match",
+    "description": "Watch the city’s top two teams face off in the championship finals. Expect high energy, live music, and fan contests.",
+    "location": "National Stadium",
+    "date": "2025-08-17",
+    "time": "05:00 PM",
+    "price": "$75",
+    "category": "Sports",
+    "image": "soccer-match.jpeg"
+  }
+]

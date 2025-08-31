@@ -17,8 +17,11 @@ export default function Signin() {
         <span className="card__title">H E Y !</span>
         <p className="card__subtitle">Get Back At It.</p>
 
-        <button className="sign-up" onClick={() => signIn("google",{ callbackUrl: "/explore" })}>
+        <button className="sign-up mr-5" onClick={() => signIn("google",{ callbackUrl: "/explore" })}>
           Sign In With Google
+        </button>
+        <button className="sign-up" onClick={() => signIn("github",{ callbackUrl: "/explore" })}>
+          Sign In With GitHub
         </button>
       </div>
     </div>

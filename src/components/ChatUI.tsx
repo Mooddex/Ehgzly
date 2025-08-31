@@ -41,7 +41,7 @@ export default function ChatUI(): JSX.Element {
     // Stream back tokens
     const reader = res.body.getReader();
     const decoder = new TextDecoder();
-    let assistant: Message = { role: "assistant", content: "" };
+    const assistant: Message = { role: "assistant", content: "" };
     setMessages((m) => [...m, assistant]);
 
     while (true) {

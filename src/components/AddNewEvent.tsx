@@ -1,36 +1,58 @@
-"use client"
-import { useState } from 'react';
-import { event } from '../types/event';
+"use client";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export const AddNewEventForm = () => {
   const [formData, setFormData] = useState({
-    title: '',
-    description: '',
-    location: '',
-    date: '',
-    time: '',
-    price: '',
-    category: '',
-    image: ''
+    title: "",
+    description: "",
+    location: "",
+    date: "",
+    time: "",
+    price: "",
+    category: "",
+    image: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
+    
   };
+  const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    router.push("/events");
     // Handle form submission here
-    console.log('Event data:', formData);
+    console.log("Event data:", formData);
   };
+  const handleCancel = () => {
+    setFormData({
+      title: "",
+      description: "",
+      location: "",
+      date: "",
+      time: "",
+      price: "",
+      category: "",
+      image: "",
+    });
+  };
+  
 
   return (
     <div className="max-w-md mx-auto">
-      <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Add New Event</h2>
+      <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+        Add New Event
+      </h2>
       <div className="space-y-6">
         {/* Event Title */}
         <div className="relative z-0 w-full mb-5 group">
@@ -199,9 +221,15 @@ export const AddNewEventForm = () => {
 
         <button
           onClick={handleSubmit}
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mr-2"
         >
           Create Event
+        </button>
+        <button
+        onClick={handleCancel}
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Cancel
         </button>
       </div>
     </div>

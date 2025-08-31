@@ -6,8 +6,6 @@
 
 * **Framework:** [Next.js](https://nextjs.org/) (React, TypeScript)
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-* **Database & ORM:** [PostgreSQL](https://www.postgresql.org/) + [Prisma](https://www.prisma.io/)
-* **Hosting (DB):** [Neon](https://neon.tech/) (Serverless Postgres)
 * **Error Monitoring:** [Sentry](https://sentry.io/)
 * **For Notification** [Sonner](https://sonner.io/)
 
@@ -27,11 +25,6 @@
 (✅)|📱 **Responsive Layout**
 (✅)|🎨 **Reusable UI Components** 
 
-
----
-
-## 🚧 Upcoming Features
-
 ---
 
 ## 🛠️ Getting Started
@@ -40,7 +33,7 @@
 
 ```bash
 git clone https://github.com/Mooddex/Ehgzly
-cd evently
+cd ehgzly
 ```
 
 ### 2. Install dependencies
@@ -100,5 +93,3 @@ Here are a few of my other projects you might like:
 * ⚖️ **My Office** – A case & client management system for lawyers. [Repo](https://github.com/Mooddex/My-Office)
 
 ---
-
-👉 Do you want me to make the **previous projects section with shields/badges and mini-descriptions**, or keep it minimal with just repo links?
