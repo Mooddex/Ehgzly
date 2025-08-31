@@ -1,8 +1,3 @@
-Got it ✅ — you want to add your **live demo link** (`https://ehgzly-mocha.vercel.app/`) into the README. The best practice is to place it near the top so visitors can access it right away. Here’s the improved version with a **🌍 Live Demo** section:
-
----
-
-````markdown
 # 🎟️ Ehgzly (Under Construction)
 
 > A modern event booking platform where users can browse, discover, and book tickets for events.
