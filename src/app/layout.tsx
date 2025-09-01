@@ -36,7 +36,7 @@ export default function RootLayout({
         <Navbar />
           <main className="pt-20">{children}</main>
 
-        <Footer title="Ehgzly" subtitle="Ticket Purchasing Website" />
+        <Footer title="Ehgzly" subtitle="Create Your Next Event" />
         <Toaster />
         </SessionProvider>
       </body>
