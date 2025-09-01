@@ -12,10 +12,14 @@ export default function EventCard({ event }: EventCardProps) {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
       <Image
-        src={`/images/${event.image}`}
-        alt={event.title}
-        className="w-full h-48 object-cover"
-      />
+  src={`/images/${event.image}`}
+  alt={event.title}
+  width={0}
+  height={0}
+  sizes="100vw"
+  className="w-full h-48 object-cover"
+/>
+
       <div className="p-4">
         <h2 className="text-xl font-semibold text-gray-800">{event.title}</h2>
         <p className="text-gray-600 text-sm line-clamp-2">{event.description}</p>
