@@ -12,7 +12,7 @@ export default function EventCard({ event }: EventCardProps) {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
       <Image
-  src={`/images/${event.image}`}
+  src={`${event.image}`}
   alt={event.title}
   width={0}
   height={0}

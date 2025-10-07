@@ -1,5 +1,5 @@
 import { Zap } from "lucide-react";
-import SearchBox from "../SearchBox";
+import SearchBox from "./SearchBox";
 
 export const SearchSection: React.FC = () => (
   <div className="w-full mx-auto mb-16">

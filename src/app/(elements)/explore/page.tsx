@@ -1,4 +1,4 @@
-import Explore from "@/components/Explore";
+import Explore from "@/components/pages/Explore";
 
 const ExplorePage = () => {
   return ( 

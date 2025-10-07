@@ -1,23 +1,10 @@
 import { Camera, ChevronLeft, ChevronRight, Music, Palette } from "lucide-react";
 import { useState, useEffect } from "react";
-
+import { TicketData} from "@/types/event";
 export const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  interface TicketData {
-    id: number;
-    title: string;
-    subtitle: string;
-    date: string;
-    time: string;
-    location: string;
-    price: string;
-    category: string;
-    rating: number;
-    image: string;
-    bgGradient: string;
-    icon: React.ElementType; 
-  }
+  
 
   // Sample ticket/card data
   const tickets: TicketData[] = [

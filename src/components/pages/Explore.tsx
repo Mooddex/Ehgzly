@@ -1,13 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Bot, Globe } from "lucide-react";
-import { AnimatedBackground } from "@/components/explore/AnimatedBackground";
-import { AIStartersSection } from "@/components/explore/AllAistartersCard";
-import { FloatingElements } from "@/components/explore/FloatingElementsComponent";
-import { HeroSection } from "@/components/explore/HeroSection";
-import { SearchSection } from "@/components/explore/SearchSectionComponent";
-import { CustomStyles } from "@/components/explore/StylesComponent";
-import { Slider } from "@/components/explore/Slider";
+import { AnimatedBackground } from "@/components/layout/AnimatedBackground";
+import { AIStartersSection } from "@/components/Cards/AllAistartersCard";
+import { FloatingElements } from "@/components/layout/FloatingElementsComponent";
+import { HeroSection } from "@/components/layout/HeroSection";
+import { SearchSection } from "@/components/search/SearchSectionComponent";
+import { Slider } from "@/components/layout/Slider";
 import {AIStarter} from '@/types/exploreTypes'
 import {MousePosition} from '@/types/exploreTypes'
 
@@ -75,7 +74,6 @@ export default function Explore() {
   </div>
 
   <FloatingElements className="absolute inset-0 z-20 pointer-events-none" />
-  <CustomStyles />
 </div>
 
 

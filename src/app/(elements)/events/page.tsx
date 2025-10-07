@@ -1,4 +1,4 @@
-import Events from "@/components/events";
+import Events from "@/components/pages/events";
 
 const EventsPage = () => {
   return ( 

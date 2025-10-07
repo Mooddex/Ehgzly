@@ -1,57 +1,57 @@
 [
   {
-    "id": "101",
-    "title": "Tech Innovation Summit",
-    "description": "Join industry leaders and innovators for a full-day conference on the latest in AI, blockchain, and cloud computing. Network with startups and investors.",
-    "location": "Silicon Valley Convention Center",
-    "date": "2025-05-14",
-    "time": "09:00 AM",
-    "price": "Free",
-    "category": "Business",
-    "image": "tech-summit.jpg"
-  },
-  {
-    "id": "102",
-    "title": "City Jazz Festival",
-    "description": "An evening of smooth and classic jazz performed by international artists. Food trucks and local breweries will be on site.",
-    "location": "Central Park Amphitheater",
-    "date": "2025-06-22",
-    "time": "07:30 PM",
-    "price": "$45",
-    "category": "Music",
-    "image": "jazz-festival.jpg"
-  },
-  {
-    "id": "103",
-    "title": "Modern Art Exhibition",
-    "description": "Explore contemporary art installations and digital experiences from over 50 international artists. Guided tours available.",
-    "location": "Metropolitan Art Gallery",
-    "date": "2025-04-10",
-    "time": "11:00 AM",
-    "price": "$20",
-    "category": "Art & Culture",
-    "image": "art-exhibit.png"
-  },
-  {
-    "id": "104",
-    "title": "Youth Coding Bootcamp",
-    "description": "A 2-week intensive coding bootcamp designed for high school students. Learn JavaScript, React, and Next.js with hands-on projects.",
-    "location": "Downtown Learning Hub",
-    "date": "2025-07-05",
+    "id": "201",
+    "title": "Digital Marketing Masterclass",
+    "description": "Learn cutting-edge strategies in SEO, social media marketing, and content creation from industry experts. Includes hands-on workshops and networking sessions.",
+    "location": "Downtown Business Center",
+    "date": "2025-09-12",
     "time": "10:00 AM",
-    "price": "$120",
-    "category": "Education",
-    "image": "coding-bootcamp.jpg"
+    "price": "$85",
+    "category": "Business",
+    "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    "id": "105",
-    "title": "Championship Soccer Match",
-    "description": "Watch the city’s top two teams face off in the championship finals. Expect high energy, live music, and fan contests.",
-    "location": "National Stadium",
-    "date": "2025-08-17",
-    "time": "05:00 PM",
-    "price": "$75",
+    "id": "202",
+    "title": "Summer Rock Concert",
+    "description": "A high-energy rock show featuring three local bands and a headlining international act. Full bar and VIP lounge available.",
+    "location": "Riverside Arena",
+    "date": "2025-07-28",
+    "time": "8:00 PM",
+    "price": "$60",
+    "category": "Music",
+    "image": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": "203",
+    "title": "Photography Workshop Series",
+    "description": "A 4-week course covering portrait, landscape, and street photography. Includes outdoor shoots and post-processing techniques.",
+    "location": "Creative Arts Studio",
+    "date": "2025-05-20",
+    "time": "2:00 PM",
+    "price": "$150",
+    "category": "Art & Culture",
+    "image": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": "204",
+    "title": "Science Fair for Kids",
+    "description": "Interactive science experiments and demonstrations for children ages 6-12. Learn about physics, chemistry, and robotics through fun activities.",
+    "location": "City Science Museum",
+    "date": "2025-06-15",
+    "time": "9:30 AM",
+    "price": "Free",
+    "category": "Education",
+    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": "205",
+    "title": "Marathon Run Challenge",
+    "description": "Annual city marathon with routes for 5K, 10K, and full marathon runners. Includes medals, refreshments, and live entertainment at the finish line.",
+    "location": "City Center Starting Point",
+    "date": "2025-10-05",
+    "time": "7:00 AM",
+    "price": "$40",
     "category": "Sports",
-    "image": "soccer-match.jpeg"
+    "image": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&w=1200&q=80"
   }
 ]

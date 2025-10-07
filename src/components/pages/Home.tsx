@@ -1,6 +1,6 @@
 "use client";
 
-import Hero from "@/components/Hero";
+import Hero from "@/components/pages/Hero";
 import ExplorePage from "@/app/(elements)/explore/page";
 import { useSession } from "next-auth/react";
 
