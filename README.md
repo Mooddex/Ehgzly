@@ -6,7 +6,7 @@
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?logo=tailwind-css)
 ![Sentry](https://img.shields.io/badge/Sentry-Monitoring-red?logo=sentry)
 ![OpenAI](https://img.shields.io/badge/OpenAI-Chatbot-blue?logo=openai)
-![Sonner](https://sonner.io/)  
+![Sonner](https://img.shields.io/badge/Sonner-Toast_Notifications-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
