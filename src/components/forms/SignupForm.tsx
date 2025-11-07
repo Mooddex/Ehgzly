@@ -1,5 +1,5 @@
 "use client";
-import { signIn } from "@/auth";
+import { signIn } from "next-auth/react";
 import Link from "next/link";
 
 export default function Signup() {
@@ -16,9 +16,9 @@ export default function Signup() {
         <span className="card__title">Welcome</span>
         <p className="card__subtitle">Create Your Account Today.</p>
 
-        <button onClick={() => signIn("google",{ callbackUrl: "/explore" })} className="sign-up">
-          Sign Up With Google
-        </button>
+       <button className="sign-up mr-5" onClick={() => signIn("google",{ callbackUrl: "/explore" })}>
+                 Sign UP With Google
+               </button>
       </div>
     </div>
   );

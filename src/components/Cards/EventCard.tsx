@@ -3,6 +3,7 @@
 import { Calendar, MapPin, Clock, DollarSign } from "lucide-react";
 import { Event } from "@/types/event";
 import Image from "next/image";
+import Link from "next/link";
 
 interface EventCardProps {
   event: Event;
@@ -10,7 +11,10 @@ interface EventCardProps {
 
 export default function EventCard({ event }: EventCardProps) {
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+    <Link href={`/events/${event.id}`}>
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition"
+    
+    >
       <Image
   src={`${event.image}`}
   alt={event.title}
@@ -44,5 +48,6 @@ export default function EventCard({ event }: EventCardProps) {
         </div>
       </div>
     </div>
+    </Link>
   );
 }
