@@ -2,7 +2,7 @@ import {AddNewEventForm} from "@/components/forms/AddNewEventForm";
 
 const AddNewEventPage = () => {
     return ( 
-        <div>
+        <div className="mb-16">
             <AddNewEventForm />
         </div>
      );

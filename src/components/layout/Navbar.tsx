@@ -14,7 +14,7 @@ const Nav = () => {
     <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-gradient-to-r from-slate-900/90 via-slate-800/90 to-slate-900/90 backdrop-blur-xl shadow-2xl rounded-2xl px-8 py-4 flex items-center gap-8 border border-slate-700/50 ring-1 ring-white/10 ">
       {/* shared pages in the navbar */}
       <Link
-            href="/events"
+            href="/event/all"
             className="group flex items-center gap-2 text-slate-300 hover:text-orange-400 transition-all duration-300 relative"
           >
             <div className="p-2 rounded-xl bg-orange-500/10 group-hover:bg-orange-500/20 transition-all duration-300">
