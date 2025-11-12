@@ -16,7 +16,7 @@ export default function Explore() {
     x: 0,
     y: 0,
   });
-  const [isHovered, setIsHovered] = useState<number | null>(null);
+  const [, setIsHovered] = useState<number | null>(null);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
