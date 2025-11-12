@@ -35,9 +35,11 @@ export default function RootLayout({
         <SessionProvider>
         <Navbar />
           <main className="pt-20">{children}</main>
-
+<Toaster 
+position="bottom-center"
+/>
         <Footer title="Ehgzly" subtitle="Create Your Next Event" />
-        <Toaster />
+        
         </SessionProvider>
       </body>
     </html>

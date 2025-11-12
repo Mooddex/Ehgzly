@@ -1,43 +1,58 @@
 "use client";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { addEventAction } from "@/app/actions/events";
+import {  updateEventAction } from "@/app/actions/events";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
-import {  TValidateEvent, ValidatedEvent } from "@/lib/validators";
+import {  EditEventSchema, TEditEventSchema } from "@/lib/validators";
+import { Event } from "@/types/event";
 
-export const AddNewEventForm = () => {
+interface EditEventFormProps {
+  event: Event;
+}
+export const EditEventForm = ({event}:EditEventFormProps) => {
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<TValidateEvent>({
-    resolver: zodResolver(ValidatedEvent),
+  } = useForm<TEditEventSchema>({
+    resolver: zodResolver(EditEventSchema),
+    defaultValues:{
+        title: event.title,
+        description: event.description,
+        location: event.location,
+        date: event.date,
+        time: event.time,
+        price: event.price,
+        category: event.category,
+        image: event.image || "",
+
+    }
   });   
 
   const router = useRouter();
 
-  async function submitHandler(data: TValidateEvent) {
+  async function submitHandler(data: TEditEventSchema) {
     try {
-      const res = await addEventAction(data);
+      const res = await updateEventAction(event.id, data);
 
       if (res.success) {
         const name = res.data?.name ?? data.title;
-        toast.success(`${name} Added successfully`);
+        toast.success(`${name} Updated successfully`);
         router.push(`/event/${res.data?.id}`);
         router.refresh();
       } else {
-        toast.error(res.message || "Failed to add event");
+        toast.error(res.message || "Failed to Updated event");
       }
     } catch (error) {
-      console.error("adding error:", error);
+      console.error("Updating error:", error);
       toast.error("Unexpected error");
     }
   }
 
   const handleCancel = () => {
-    reset();
+    reset(event);
   };
 
   return (
@@ -45,7 +60,7 @@ export const AddNewEventForm = () => {
       onSubmit={handleSubmit(submitHandler)}
       className="max-w-md mx-auto mb-14 p-6 bg-white rounded-lg shadow-md"
     >
-      <h2 className="text-2xl font-bold mb-6 text-black">Add New Event</h2>
+      <h2 className="text-2xl font-bold mb-6 text-black">Update {event.title}</h2>
 
       <div className="space-y-6">
         {/* Event Title */}
@@ -207,7 +222,7 @@ export const AddNewEventForm = () => {
           type="submit"
           className="text-white bg-blue-700 px-5 py-2.5 rounded-lg"
         >
-          Create Event
+          Update Event
         </button>
 
         <button

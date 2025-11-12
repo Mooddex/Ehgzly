@@ -5,7 +5,7 @@ export interface Event {
   location: string;
   date: string;
   time: string;
-  price: string;
+  price: number;
   category: string;   
   image: string;
 }
