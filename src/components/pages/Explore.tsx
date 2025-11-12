@@ -9,7 +9,8 @@ import { SearchSection } from "@/components/search/SearchSectionComponent";
 import { Slider } from "@/components/layout/Slider";
 import {AIStarter} from '@/types/exploreTypes'
 import {MousePosition} from '@/types/exploreTypes'
-
+import { motion } from "framer-motion";
+import AnimatedSection from "@/app/template"
 
 export default function Explore() {
      const [mousePosition, setMousePosition] = useState<MousePosition>({
@@ -48,35 +49,32 @@ export default function Explore() {
   ];
 
   return (
-  <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
+  <motion.div
+      initial={{ opacity: 0, y: 50 }}   // starting state
+      animate={{ opacity: 1, y: 0 }}    // target state
+      transition={{ duration: 0.6, ease: "easeOut" }} className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
   <AnimatedBackground mousePosition={mousePosition} />
 
-  <div className="relative z-10">
-    <section className="h-screen flex items-center justify-center">
-      <HeroSection />
-    </section>
+<div className="relative z-10 h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth flex flex-col gap-20 p-3">
+        <AnimatedSection >
+          <HeroSection />
+        </AnimatedSection>
 
-    <section className="h-screen flex items-center justify-center">
-      <Slider />
-    </section>
+        <AnimatedSection>
+          <Slider />
+        </AnimatedSection>
 
-    <section className="h-screen flex items-center justify-center">
-      <AIStartersSection
-        aiStarters={aiStarters}
-       
-        setIsHovered={setIsHovered}
-      />
-    </section>
+        <AnimatedSection>
+          <AIStartersSection aiStarters={aiStarters} setIsHovered={setIsHovered} />
+        </AnimatedSection>
 
-    <section className="h-screen flex items-center justify-center w-full">
-      <SearchSection />
-    </section>
-  </div>
+        <AnimatedSection>
+          <SearchSection />
+        </AnimatedSection>
+      </div>
 
-  <FloatingElements className="absolute inset-0 z-20 pointer-events-none" />
-</div>
-
-
+      <FloatingElements className="absolute inset-0 z-20 pointer-events-none" />
+    </motion.div>
   );
-};
+}
 
