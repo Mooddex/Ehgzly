@@ -2,22 +2,13 @@ import { getEventById } from "@/app/actions/events";
 import NotFound from "@/app/not-found";
 import EventC from "@/components/pages/event";
 
-async function EventPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+async function EventPage({ params }: { params: { id: string } }) {
+  const { id } = params;
+  const event = await getEventById(id);
 
-  let event;
-  try {
-    event = await getEventById(id);
-  } catch (error) {
-    console.log(error);
-    return <NotFound />;
-  }
-  
+  if (!event) return <NotFound />;
 
-  return (
-  <EventC event={event} />
-  )
-    
+  return <EventC event={event} />;
 }
 
 export default EventPage;
