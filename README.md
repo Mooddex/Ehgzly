@@ -7,6 +7,9 @@
 ![Sentry](https://img.shields.io/badge/Sentry-Monitoring-red?logo=sentry)
 ![OpenAI](https://img.shields.io/badge/OpenAI-Chatbot-blue?logo=openai)
 ![Sonner](https://img.shields.io/badge/Sonner-Toast_Notifications-orange)
+![Zod](https://img.shields.io/badge/Zod-3.x-grey?logo=zod)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-Start-purple?logo=framer)
+
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
