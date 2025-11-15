@@ -18,7 +18,7 @@ export default function UserProfile({User}:userProps) {
     
   } 
     return(
-    <section className="max-w-md w-full bg-white rounded-2xl shadow-md p-6 text-center">
+    <section className="max-w-md w-full mx-auto bg-white rounded-2xl shadow-md p-6 text-center">
       {/* Profile Photo */}
       <div className="flex justify-center">
         <Image

@@ -5,7 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Toaster } from "sonner";
-import { SessionProvider } from "next-auth/react";
+import Providers from './Provider'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
-        <SessionProvider>
+        <Providers>
         <Navbar />
           <main className="pt-20">{children}</main>
 <Toaster 
@@ -40,7 +40,7 @@ position="bottom-center"
 />
         <Footer title="Ehgzly" subtitle="Create Your Next Event" />
         
-        </SessionProvider>
+        </Providers>
       </body>
     </html>
   );
