@@ -10,7 +10,7 @@ const Footer = ({ title, subtitle }: FooterProps) => {
   return (
     // Removed "sticky-bottom" class here
     <footer className="bg-gray-900 text-white text-center py-10 px-6">
-      <div className="max-w-screen-md mx-auto space-y-6">
+      <div className="max-w-3xl mx-auto space-y-6">
         <div>
           <h1 className="text-3xl font-bold mb-2">{title}</h1>
           <p className="text-gray-300">{subtitle}</p>

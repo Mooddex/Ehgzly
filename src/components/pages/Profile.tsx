@@ -12,7 +12,7 @@ interface userProps {
 
 export default function UserProfile({ User }: userProps) {
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-violet-800 p-4 overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center bg-linear-to-br from-indigo-900 via-purple-900 to-violet-800 p-4 overflow-hidden">
 
       {/* 🔮 Ambient Floating Backgrounds */}
       <div className="absolute w-72 h-72 bg-purple-500/20 rounded-full blur-3xl -top-20 -left-10 animate-pulse"></div>
